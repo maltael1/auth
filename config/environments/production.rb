@@ -1,10 +1,10 @@
 Rails.application.configure do
+  
   config.cache_classes = true
   config.secret_key_base = 'YourSecretKeyHereomgitskey'
   config.eager_load = true
   config.discovery_host = 'http://registrator.ya-o.ru/api/v0/register_service' # Хост сервис провайдера
   config.service_token = '6baa78dbd73ae22e88e084967df2fc30' # Токен сервиса аутентификации
-
   config.host = 'http://auth.ya-o.ru'
   config.gate_host = 'http://auth.ya-o.ru/gate'
 

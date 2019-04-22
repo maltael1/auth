@@ -1,5 +1,5 @@
 class GateController < ApplicationController
-
+    skip_before_action :authenticate_request
     def confirm # Сюда будет стучаться сервис провайдер # post '/gate', to: 'gate#confirm'
         case params[:method]
         when 'confirm'
