@@ -6,6 +6,7 @@ class JsonWebToken
         end
    
         def decode(token)
+            puts JWT.decode(token, Rails.application.secrets.secret_key_base).to_json
             body = JWT.decode(token, Rails.application.secrets.secret_key_base)[0]
             HashWithIndifferentAccess.new body
         rescue
