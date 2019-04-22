@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.0'
+ruby '2.6.2'
 
 gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
 gem 'sqlite3'
 gem 'puma', '~> 3.11'
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'bootsnap', github: 'ojab/bootsnap', require: false
+gem 'bootsnap', require: false
 
 gem 'jwt'
 gem 'simple_command'
